@@ -1,0 +1,215 @@
+:root {
+  /* Surface levels (SPEC.md § IX + token_design.md) */
+  --color-background: #101411;
+  --color-canvas: #0b0f0c;
+  --color-sheet: #191d19;
+  --color-elevated: #272b28;
+  --color-surface-bright: #363a37;
+  --color-surface: #101411;
+  --color-surface-dim: #101411;
+  --color-surface-container-lowest: #0b0f0c;
+  --color-surface-container-low: #191d19;
+  --color-surface-container: #1d211d;
+  --color-surface-container-high: #272b28;
+  --color-surface-container-highest: #323632;
+  --color-surface-variant: #323632;
+  --color-tile-surface: #151916;
+  --color-tile-active: #20261F;
+
+  /* Text */
+  --color-on-surface: #e0e3de;
+  --color-on-surface-variant: #c5c9b0;
+  --color-on-background: #e0e3de;
+  --color-inverse-surface: #e0e3de;
+  --color-inverse-on-surface: #2d312e;
+  --color-nav-inactive: #9BA39A;
+  --color-text-bright: #F1F3E8;
+
+  /* Primary action (see RISKS.md row 15) */
+  --color-acid: #D8FF5E;
+  --color-primary: #ffffff;
+  --color-primary-container: #cbf152;
+  --color-on-primary: #293500;
+  --color-on-primary-container: #566c00;
+  --color-inverse-primary: #516600;
+  --color-surface-tint: #b0d437;
+  --color-primary-fixed: #cbf152;
+  --color-primary-fixed-dim: #b0d437;
+  --color-on-primary-fixed: #161e00;
+  --color-on-primary-fixed-variant: #3c4d00;
+
+  /* Secondary accent (technical metadata, nav) */
+  --color-secondary: #b9c3ff;
+  --color-secondary-accent: #8A9EFF;
+  --color-on-secondary: #082583;
+  --color-secondary-container: #283e9a;
+  --color-on-secondary-container: #a1b1ff;
+  --color-secondary-fixed: #dde1ff;
+  --color-secondary-fixed-dim: #b9c3ff;
+  --color-on-secondary-fixed: #001256;
+  --color-on-secondary-fixed-variant: #283e9a;
+
+  /* Tertiary */
+  --color-tertiary: #ffffff;
+  --color-on-tertiary: #5d1704;
+  --color-tertiary-container: #ffdbd1;
+  --color-on-tertiary-container: #a24a32;
+  --color-tertiary-fixed: #ffdbd1;
+  --color-tertiary-fixed-dim: #ffb5a1;
+  --color-on-tertiary-fixed: #3c0800;
+  --color-on-tertiary-fixed-variant: #7c2d18;
+
+  /* Activity accents */
+  --color-accent-terracotta: #FF9275;
+  --color-accent-lavender: #C4AAFF;
+  --color-accent-mint: #9DE4BF;
+  --color-accent-chartreuse: #D8FF5E;
+
+  /* Structure */
+  --color-hairline: rgba(241, 243, 232, 0.08);
+  --color-hairline-focus: rgba(241, 243, 232, 0.16);
+  --color-outline: #8f937c;
+  --color-outline-variant: #454936;
+
+  /* Error */
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  /* Fonts (with fallback stacks per RISKS.md row 11) */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-editorial: 'Newsreader', Georgia, serif;
+
+  /* Typography scale tokens (from token_design.md) */
+  --size-display-lg: 3rem;
+  --size-display-lg-mobile: 2.25rem;
+  --size-headline-lg: 1.75rem;
+  --size-headline-sm: 1.25rem;
+  --size-editorial-italic: 1.25rem;
+  --size-body-lg: 1rem;
+  --size-body-sm: 0.875rem;
+  --size-mono-metric: 1.125rem;
+  --size-mono-label: 0.75rem;
+  --size-mono-badge: 0.6875rem;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --leading-display-lg: 1.1;
+  --leading-display-lg-mobile: 1.15;
+  --leading-headline-lg: 1.25;
+  --leading-headline-sm: 1.35;
+  --leading-editorial: 1.4;
+  --leading-body-lg: 1.5;
+  --leading-body-sm: 1.45;
+  --leading-mono-metric: 1.2;
+  --leading-mono-label: 1.2;
+  --leading-mono-badge: 1.1;
+
+  --tracking-display-lg: -0.04em;
+  --tracking-display-lg-mobile: -0.03em;
+  --tracking-headline-lg: -0.02em;
+  --tracking-headline-sm: -0.01em;
+  --tracking-editorial: 0.01em;
+  --tracking-body-lg: 0;
+  --tracking-body-sm: 0.005em;
+  --tracking-mono-metric: -0.02em;
+  --tracking-mono-label: 0.04em;
+  --tracking-mono-badge: 0.08em;
+
+  /* Border radius */
+  --radius-sm: 0.125rem;
+  --radius-default: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-2xs: 0.125rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1.25rem;
+  --space-xl: 2rem;
+  --space-2xl: 3.5rem;
+  --gutter: 0.75rem;
+  --gutter-desktop: 1.5rem;
+  --margin: 1rem;
+  --margin-desktop: 3rem;
+
+  /* Component & structural geometry tokens */
+  --touch-target-min: 3rem;
+  --hairline-width: 1px;
+  --active-indicator-height: 0.125rem;
+  --active-dot-size: 0.375rem;
+  --shell-max-width: 56rem;
+  --scale-active: 0.98;
+  --drawer-max-height: 85dvh;
+  --drawer-handle-width: 2rem;
+  --drawer-handle-height: 0.125rem;
+  --icon-grid-col-min: 4.25rem;
+  --color-backdrop: rgba(11, 15, 12, 0.78);
+}
+
+:root[data-theme='light'] {
+  /* Archival Field Paper Light Palette */
+  --color-background: #f5f6f0;
+  --color-canvas: #eef0e8;
+  --color-sheet: #ebede4;
+  --color-elevated: #dfe2d6;
+  --color-surface-bright: #ffffff;
+  --color-surface: #f5f6f0;
+  --color-surface-dim: #e4e7dc;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff1e9;
+  --color-surface-container: #ebede4;
+  --color-surface-container-high: #e2e5da;
+  --color-surface-container-highest: #d8dcd0;
+  --color-surface-variant: #d8dcd0;
+  --color-tile-surface: #f9faf6;
+  --color-tile-active: #e6ebd6;
+
+  /* High-contrast Archival Ink Text (>= 4.5:1 WCAG AA/AAA) */
+  --color-on-surface: #141815;
+  --color-on-surface-variant: #3e443d;
+  --color-on-background: #141815;
+  --color-inverse-surface: #1d211d;
+  --color-inverse-on-surface: #f1f3e8;
+  --color-nav-inactive: #525950;
+  --color-text-bright: #0b0f0c;
+
+  /* Primary Action & Accents calibrated for light surfaces */
+  --color-acid: #3b4d00;
+  --color-primary: #141815;
+  --color-primary-container: #2b3800;
+  --color-on-primary: #f5f6f0;
+  --color-on-primary-container: #f5f6f0;
+  --color-secondary: #283e9a;
+  --color-secondary-accent: #1d3285;
+
+  /* Activity Accents on Light Paper */
+  --color-accent-terracotta: #b83b1b;
+  --color-accent-lavender: #5b38b5;
+  --color-accent-mint: #0e6b45;
+  --color-accent-chartreuse: #3b4d00;
+
+  /* Hairlines & Structure */
+  --color-hairline: rgba(20, 24, 21, 0.12);
+  --color-hairline-focus: rgba(20, 24, 21, 0.28);
+  --color-outline: #5c6154;
+  --color-outline-variant: #b8bca8;
+
+  /* Error */
+  --color-error: #b3261e;
+  --color-on-error: #ffffff;
+  --color-error-container: #f9dedc;
+  --color-on-error-container: #410e0b;
+
+  --color-backdrop: rgba(20, 24, 21, 0.55);
+}
+
